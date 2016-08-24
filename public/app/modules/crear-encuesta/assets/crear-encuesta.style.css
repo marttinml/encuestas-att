@@ -1,0 +1,40 @@
+ul.tipo-encuesta{
+	padding: 10px;
+}
+ul.tipo-encuesta > li{
+	height: 150px;
+	position: relative;
+	border-bottom: 1px solid rgb(74,74,74);
+	cursor: pointer;
+}
+ul.tipo-encuesta > li.select{
+	background-color: rgb(54,54,54);
+}
+ul.tipo-encuesta > li > i{
+	position: absolute;
+	display: block;
+	left: 20px;
+	top: 20px;
+	width: 51px;
+	height: 51px;
+	background-image: url(img/ico.satisfaccion.blue.svg);
+	background-repeat: no-repeat;
+}
+ul.tipo-encuesta > li:last-child{
+	border: none;
+}
+ul.tipo-encuesta > li > i.satisfaccion{
+	background-image: url(img/ico.satisfaccion.blue.svg);
+}
+ul.tipo-encuesta > li > i.categorias{
+	background-image: url(img/ico.categorias.blue.svg);
+}
+ul.tipo-encuesta > li > div{
+	left: 80px;
+	top:20px;
+	position: absolute;
+	right: 20px;
+}
+ul.tipo-encuesta > li > div > p{
+	margin:10px;
+}

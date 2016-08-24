@@ -1,0 +1,25 @@
+<main>
+	<header>
+		<i ng-click="back()"></i>
+	</header>
+	<article>
+		<div class="padding-10">
+			<p align="center" class="title">¿Qué tipo de encuesta deseas generar?</p>
+			<hr class="blue">
+		</div>
+		<div>
+			<ul class="tipo-encuesta">
+				<li ng-repeat="tipo in tipoEncuestaList" ng-click="select(tipo)" ng-class="{select:tipo.select}">
+					<i ng-class="tipo.img"></i>
+					<div>
+						<p class="title">{{tipo.name}}</p>
+						<p>{{tipo.description}}</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</article>
+	<footer>
+		<button ng-class="{disable:tipoEncuesta===null}" click="siguiente()">COMENZAR</button>
+	</footer>
+</main>

@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Omnes Light';
+    src: url(./fonts/SF-UI-Text-Light.otf) format('opentype');
+    /*    src: url(./fonts/Omnes_ATT%20II%20Light.otf) format('opentype');*/
+}
+
+@font-face {
+    font-family: 'SF';
+    src: url(./fonts/Omnes_ATT%20II-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'SF Light';
+    src: url(./fonts/Omnes_ATTW02.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Omnes Medium';
+    src: url(./fonts/SF-UI-Text-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Omnes W';
+    src: url(./fonts/SF-UI-Text-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Omnes';
+    src: url(./fonts/SF-UI-Text-Light.otf) format('opentype');
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(37,37,37,.9);
+    font-size: 18px;
+    padding: 0;
+    font-family: 'SF Light'!important;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#252525+0,363636+100 */
+    background: #252525; /* Old browsers */
+    background: -moz-linear-gradient(left,  #252525 0%, #363636 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #252525 0%,#363636 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #252525 0%,#363636 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 100vh;
+    color: rgb(241,241,241);
+    font-size: 18px;
+    }
+
+header{
+    height: 63px;
+    background-color: rgb(37,37,37);
+    position: relative;
+}
+
+header > i{
+    background-image: url(img/ico.arrow.left.white.svg);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    left: 15px;
+    top:18px;
+}
+button{
+    height: 50px;
+    max-width: 500px;
+    bottom: 20px;
+    margin:auto;
+    display: block;
+    width: 90%;
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid rgb(27,160,217);
+    font-size: 21px;
+    color: rgb(27,160,217);
+    letter-spacing: 3px;
+}
+button.disable{
+    opacity: .3;
+}
+
+article{
+    height: calc(100vh - 133px);
+}
+footer{
+    height: 50px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin:0;
+}
+.title{
+    font-size: 24px;
+}
+.blue{
+    background-color: rgb(27,160,217);
+}
+hr.blue{
+    border-color:rgb(27,160,217);
+}
+
+.padding-10{
+    padding: 10px;
+}
