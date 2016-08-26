@@ -18,11 +18,11 @@
         // });
 
 
-        // // Crear
-        // $routeProvider.when('/crear', {
-        //     templateUrl: baseUrl + 'crear/views/crear.view.html',
-        //     controller: 'CrearEncuestaController'
-        // });
+        // Crear
+        $routeProvider.when('/crear', {
+            templateUrl: baseUrl + 'crear-encuesta/views/crear.view.html',
+            controller: 'CrearEncuestaController'
+        });
 
         // // Calendario
         // $routeProvider.when('/calendario', {

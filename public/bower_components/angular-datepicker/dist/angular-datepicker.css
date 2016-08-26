@@ -102,7 +102,7 @@
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: transparent;
     /* GENERAL */
     padding: 4px;
     /* SPECIFIC */
@@ -160,7 +160,7 @@
 [date-picker] .active,
 [date-picker] .now {
     color: #fff;
-    background-color: #252525;
+    background-color: rgb(27,160,217);
     border-radius: 50px;
 }
 
@@ -189,9 +189,8 @@
 }
 
 [date-picker] .now {
-    background: white;
-    color: black;
-    border: 1px solid;
+    background: transparent;
+    border: 1px solid rgb(27,160,217);
     border-radius: 60px;
 }
 
@@ -232,7 +231,7 @@
 [date-picker] [ng-switch-when="date"] span {
     width: 40px;
     height: 40px;
-    line-height: 40px;
+    line-height: 42px;
     font-size: 20px;
 }
 

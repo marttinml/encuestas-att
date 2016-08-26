@@ -1,7 +1,7 @@
 .textbox{
     text-align: left;
     position: relative;
-    height: 50px;
+    height: 90px;
     border-bottom: 1px solid rgb(26,160,217);
 }
 .textbox.no-border{
@@ -12,14 +12,13 @@
     outline: none;
     border: 0;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 18px;
     position: absolute;
     z-index: 2;
-    top:0;
+    bottom:15px;
     left: 0;
     right: 0;
-    bottom: 0;
-    color: rgb(0,0,0);
+    color: rgb(241,241,241);
     text-align: center;
 }
 .textbox label{
@@ -28,21 +27,19 @@
     position: absolute;
     z-index: 1;
     width: 100%;
-    top:10;
+    bottom:15px;
     left: 0;
     right: 0;
-    bottom: 0;
     text-align: center;
     transition: .2s;
     font-weight: normal;
-    color: rgb(155,155,155);
+    color: rgb(106,106,106);
 }
 .textbox label.focused{
     text-align: left;
     font-size: 14px;
-    top: 15px;
+    bottom: 50px;
     transition: .2s;
-    color: rgb(155,155,155);
 }
 
 .textbox > i{

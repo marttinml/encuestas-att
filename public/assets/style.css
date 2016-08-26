@@ -43,8 +43,6 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#252525+0,363636+100 */
     background: #252525; /* Old browsers */
     background: -moz-linear-gradient(left,  #252525 0%, #363636 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left,  #252525 0%,#363636 100%); /* Chrome10-25,Safari5.1-6 */
@@ -53,7 +51,7 @@ body {
     color: rgb(241,241,241);
     font-size: 18px;
     }
-
+input,button{font-family: 'SF Light'!important;}
 header{
     height: 63px;
     background-color: rgb(37,37,37);
@@ -91,6 +89,7 @@ button.disable{
 
 article{
     height: calc(100vh - 133px);
+    overflow: auto;
 }
 footer{
     height: 50px;
@@ -117,4 +116,8 @@ hr.blue{
 
 .padding-10{
     padding: 10px;
+}
+.padding-left-right-10{
+    padding-left: 10px;
+    padding-right: 10px;
 }

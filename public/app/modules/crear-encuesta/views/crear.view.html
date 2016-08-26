@@ -1,0 +1,46 @@
+<main>
+    <header>
+        <i ng-click="back()"></i>
+    </header>
+    <article class="padding-left-right-10">
+        <div ng-placeholder class="textbox" ng-model="titulo">
+            <label>Título</label>
+            <input type="text" ng-model="titulo">
+            <i></i>
+        </div>
+        <div ng-placeholder class="textbox" ng-model="descripcion">
+            <label>Descripción</label>
+            <input type="text" ng-model="descripcion">
+            <i></i>
+        </div>
+        <div ng-placeholder class="textbox" ng-model="autor">
+            <label>Autor</label>
+            <input type="text" ng-model="autor">
+            <i></i>
+        </div>
+        <ng-select titulo="Dirección" set="direcciones" ng-model="direccion"></ng-select>
+        <div class="datepicker">
+            <div class="datepicker-label" ng-click="openVigencia()" ng-hide="vigenciaVacia">
+            <span class="month-vigencia"><span>Mes</span> {{month}}</span> <span class="day-vigencia"><span>Día</span> {{day}}</span></div>
+            <div class="datepicker-label" ng-click="openVigencia()" ng-show="vigenciaVacia">Vigencia <i class="flecha-down"></i></div>
+        </div>
+        <ng-select titulo="Tiempo" set="tiempoAprox" ng-model="duracionPregunta"></ng-select>
+    </article>
+    <footer>
+        <button ng-click="siguiente()">SIGUIENTE</button>
+    </footer>
+</main>
+
+
+
+
+<ng-alert-error visible="muestraAlerta" titulo="Descartar encuesta" cuerpo="¿Deseas descartar esta encuesta?" aceptar="aceptaAlerta" cancelar="cancelaAlerta"></ng-alert-error>
+<div class="alerta-calendario" ng-show="showCalendario">
+    <header class="header-preguntas">
+        <div class="back" ng-click="cerrarCalendario()"></div>
+    </header>
+    <div date-picker view="date" max-view="date" min-view="date" min-date="minDate" date-change="changeDate"></div>
+    <div class="form-group footer-buttons">
+        <button ng-click="aceptarCalendario()">ACEPTAR</button>
+    </div>
+</div>

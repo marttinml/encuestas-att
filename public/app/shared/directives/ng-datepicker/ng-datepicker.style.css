@@ -1,5 +1,5 @@
 .datepicker {
-    height: 50px;
+    height: 90px;
     width: 100%;
     position: relative;
     border-bottom: 1px solid rgb(17, 160, 217);
@@ -11,13 +11,66 @@
     position: absolute;
     z-index: 1;
     width: 100%;
-    top: 10px;
+    bottom: 15px;
     left: 0;
     right: 0;
-    bottom: 0;
     text-align: center;
     transition: .2s;
     font-weight: normal;
-    color: rgb(155, 155, 155);
+    color: rgb(106, 106, 106);
     cursor: pointer;
+}
+
+.next-calendar {
+    background: url(img/calendar-next.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.prev-calendar {
+    background: url(img/calendar-back.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.day {
+    color: rgb(27,160,217);
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.alerta-calendario {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #252525; /* Old browsers */
+    background: -moz-linear-gradient(left,  #252525 0%, #363636 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #252525 0%,#363636 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #252525 0%,#363636 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    z-index: 10;
+}
+
+.month-vigencia {
+    width: 50%;
+    float: left;
+    color: #333;
+    position: relative;
+}
+
+.day-vigencia {
+    width: 50%;
+    float: right;
+    color: #333;
+    position: relative;
+}
+
+.month-vigencia > span,
+.day-vigencia > span {
+    color: #9B9B9B;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }

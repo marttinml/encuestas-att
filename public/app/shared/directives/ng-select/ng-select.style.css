@@ -1,7 +1,7 @@
 ng-select {}
 
 ng-select > div {
-    height: 50px;
+    height: 90px;
     width: 100%;
     position: relative;
     border-bottom: 1px solid rgb(17, 160, 217);
@@ -14,8 +14,8 @@ ng-select div.wrapper {
 }
 
 ng-select div.wrapper > span {
-    font-size: 20px;
-    top: 10px;
+    font-size: 18px;
+    bottom: 15px;
     position: absolute;
     display: block;
     width: 100%;
@@ -24,7 +24,7 @@ ng-select div.wrapper > span {
 ng-select div > i {
     position: absolute;
     right: 10px;
-    top: 20px;
+    bottom: 20px;
     height: 10px;
     width: 14px;
     display: block;
@@ -37,12 +37,11 @@ ng-select > div > ul {
     height: 50px;
     z-index: 3;
     list-style: none;
-    border: 1px solid rgb(17, 160, 217);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(61,61,61,0.95);
     display: inline-block;
     width: 100%;
     padding: 0;
-    top: 50px;
+    top: 90px;
     left: 0;
     right: 0;
 }
@@ -84,21 +83,20 @@ ng-select label {
     position: absolute;
     z-index: 1;
     width: 100%;
-    top: 10px;
+    bottom: 15px;
     left: 0;
     right: 0;
-    bottom: 0;
     text-align: center;
     transition: .2s;
     font-weight: normal;
-    color: rgb(155, 155, 155);
+    color: rgb(106,106,106);
     cursor: pointer;
 }
 
 ng-select label.focused {
     text-align: left;
     font-size: 14px;
-    top: 15px;
+    bottom: 50px;
     transition: .2s;
-    color: rgb(155, 155, 155);
+    color: rgb(200, 200, 200);
 }

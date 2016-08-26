@@ -31,7 +31,7 @@
         $scope.siguiente = function () {
             if($scope.tipoEncuesta!==null){
                 $internal.encuesta.tipoEncuesta = $scope.tipoEncuesta;
-                $window.location = '#/preguntas';
+                $window.location = '#/crear';
             } else {
                 $rootScope.alert = true;
                 $rootScope.mensajeAlerta = "Debes llenar todos los campos.";
