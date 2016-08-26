@@ -29,19 +29,9 @@
         };
 
         $scope.siguiente = function () {
-            if (isValid()) {
-                $internal.encuesta.titulo = $scope.titulo;
-                $internal.encuesta.descripcion = $scope.descripcion;
-                $internal.encuesta.autor = $scope.autor;
-                $internal.encuesta.direccion = $scope.direccion;
-                $internal.encuesta.valides = $scope.vigencia;
-                $internal.encuesta.tiempo = $scope.duracionPregunta.time;
+            if($scope.tipoEncuesta!==null){
                 $internal.encuesta.tipoEncuesta = $scope.tipoEncuesta;
-                if ($internal.encuesta.tipoEncuesta.id == 1) {
-                    $window.location = '#/preguntas';
-                } else {
-                    $window.location = '#/categorias';
-                }
+                $window.location = '#/preguntas';
             } else {
                 $rootScope.alert = true;
                 $rootScope.mensajeAlerta = "Debes llenar todos los campos.";

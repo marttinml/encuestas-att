@@ -83,6 +83,7 @@ button{
     font-size: 21px;
     color: rgb(27,160,217);
     letter-spacing: 3px;
+    outline: none;
 }
 button.disable{
     opacity: .3;
